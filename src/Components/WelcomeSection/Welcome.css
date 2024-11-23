@@ -1,6 +1,9 @@
 /* placeholder for spacing while page is being developed */
 .header-elements {
-    padding-top: 150px; 
+    align-items: center;
+    justify-content: center;
+    margin-top: 500px;
+    
   }
 
   .enter-button {

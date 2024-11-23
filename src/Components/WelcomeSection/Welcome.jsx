@@ -12,7 +12,7 @@ function Welcome(props) {
   return (
     <div className="container">
       <header className="header-elements">
-        <h1>Welcome to {props.subject}'s Portfolio!</h1>
+        <h1>{props.subject}'s Web Portfolio 👨🏽‍💻</h1>
         <button
          type="button" 
          className="enter-button"
