@@ -1,3 +1,66 @@
 .projects-page {
     margin-top: 100px;
 }
+
+.header {
+    margin-top: 70px;
+    margin-bottom: 20px;
+    font-weight: 600;
+    text-align: center;
+    color: white;
+    opacity: 0;
+    animation: fadeInMoveUp 1s ease-out forwards;
+    animation-delay: 0s;
+}
+
+.description {
+    font-size: 15px;
+    font-weight: 300;
+    text-align: center;
+    color: white;
+    opacity: 0;
+    animation: fadeInMoveUp 1s ease-out forwards;
+    animation-delay: .5s;
+}
+
+
+.projects-list {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px; 
+    align-items: center; 
+}
+
+.project-item {
+    width: 80%; 
+    max-width: 600px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    text-align: left;
+    color: white;
+    background: linear-gradient(90deg, #e47cf1, #1e4296, #d608be, rgb(255, 3, 3));
+    background-size: 300%;
+    animation: fadeInMoveUp 1s ease-out forwards, gradient-animation 6s infinite;
+    opacity: 0; 
+    overflow: hidden;
+    animation-delay: calc(1s + var(--delay, 0) * 0.2s);
+}
+
+.project-title {
+ color: white;
+ font-size: 19px;
+ transition: font-size 0.5s ease;
+}
+
+.project-title:hover {
+    font-size: 23px;
+}
+
+.project-description {
+    font-size: 14px;
+    font-weight: 300;
+    color: #ddd;
+    margin-top: 8px;
+}

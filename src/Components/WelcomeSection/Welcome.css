@@ -3,15 +3,68 @@
     align-items: center;
     justify-content: center;
     margin-top: 500px;
-    
+    font-weight: 700;
+    color: white;
   }
 
+.header-text {
+  opacity: 0;
+    animation: fadeInMoveUp 1s ease-out forwards;
+    animation-delay: .3s;
+}
   .enter-button {
+    position: relative;
+    margin-top: 30px;
     padding: 10px 20px;
+    width: 180px;
+    height: 50px;
     font-size: 16px;
     background-color: black;
     color: white;
-    border: none;
+    border: 2px solid white;
     cursor: pointer;
+    opacity: 0;
+    animation: fadeInMoveUp 1s ease-out forwards, shortBounce 3s ease-in-out infinite;
+    animation-delay: .7s, 1.6s;
+    z-index: 1;
   }
-  
+ 
+  .welcome-container {
+    width: 100%;
+  }
+
+  @keyframes gradient-animation {
+    0% {
+        background-position: 0%;
+    }
+    50% {
+        background-position: 100%;
+    }
+    100% {
+        background-position: 0%;
+    }
+}
+
+.enter-button::before {
+  content: "";
+    position: absolute;
+    top: -10px; 
+    bottom: -10px; 
+    left: -10px; 
+    right: -10px; 
+    z-index: -1; 
+    border-radius: 12px; 
+    background: linear-gradient(90deg, #e47cf1, #1e4296, #d608be, rgb(255, 3, 3)); 
+    filter: blur(20px); 
+    opacity: 0.8; 
+    animation: gradient-animation 6s infinite; 
+}
+
+.enter-button:hover::before {
+  top: -15px;
+  bottom: -15px;
+  left: -15px;
+  right: -15px;
+  filter: blur(25px);
+  opacity: 2; 
+}

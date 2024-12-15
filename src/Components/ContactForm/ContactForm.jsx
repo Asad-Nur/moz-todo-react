@@ -90,7 +90,7 @@ const ContactForm = () => {
             <img className='red-cross' src={redcross} alt='Error' />
           )}
             <p className='popup-text'>{result}</p>
-            <button onClick={closePopup}>Close</button>
+            <button className='closeButton' onClick={closePopup}>Close</button>
           </div>
         </div>
       )}

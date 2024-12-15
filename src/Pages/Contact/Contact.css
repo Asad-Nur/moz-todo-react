@@ -1,12 +1,43 @@
-
-/* .contact-text {
-
-} */
-
 .contact-me {
 margin-top: 100px;
+margin-bottom: 20px;
+font-weight: 600;
+text-align: center;
+color: white;
+opacity: 0;
+animation: fadeInMoveUp 1s ease-out forwards;
+animation-delay: 0s;
 }
 
 .contact-smaller {
-margin-top: -15px;
+font-size: 15px;
+font-weight: 300;
+text-align: center;
+color: white;
+opacity: 0;
+animation: fadeInMoveUp 1s ease-out forwards;
+animation-delay: .5s;
 }
+
+.contact-container {
+    margin-left: 0 auto;
+    margin-right: 0 auto;
+    height: auto;
+}
+
+.form {
+    opacity: 0;
+    animation: fadeInMoveUp 1.5s ease-out forwards;
+    animation-delay: 1s;
+}
+
+@keyframes fadeInMoveUp {
+    from {
+      opacity: 0;
+      transform: translateY(40px); 
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0px); 
+    }
+  }
